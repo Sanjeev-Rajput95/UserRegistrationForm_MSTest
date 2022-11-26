@@ -4,11 +4,17 @@ namespace UserForm
     public class UnitTest1
     {
         [TestMethod]
-            public void fName()
+            public void FirstName()
             {
-                bool result = UserRegistrationForm_MSTesting.UserRegistrationForm.userForm("Sanjeev");
+                bool result = UserRegistrationForm_MSTesting.UserRegistrationForm.UserForm("Sanjeev");
                 Assert.IsTrue(result);
             }
-        
+        [TestMethod]
+        public void LastName()
+        {
+            bool result = UserRegistrationForm_MSTesting.UserRegistrationForm.UserFormLastName("Singh");
+            Assert.IsTrue(result);
+        }
+
     }
 }
