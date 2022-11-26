@@ -51,5 +51,12 @@ namespace UserForm
             Assert.IsTrue(result);
         }
 
+        [TestMethod]
+        public void Atleast1SpecialCharPassWordRule_4()
+        {
+            bool result = UserRegistrationForm_MSTesting.UserRegistrationForm.Atleast1SpecialCharPassWordRule_4("Sameersingh@1");
+            Assert.IsTrue(result);
+        }
+
     }
 }

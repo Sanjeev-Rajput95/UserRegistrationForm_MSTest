@@ -69,5 +69,14 @@ namespace UserRegistrationForm_MSTesting
             bool password = name.IsMatch(password_3);
             return password;
         }
+
+        public static bool Atleast1SpecialCharPassWordRule_4(string password_4)
+        {
+            string min1SpecialChar = @"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^\da-zA-Z]).{8,}$";
+
+            Regex name = new Regex(min1SpecialChar);
+            bool password = name.IsMatch(password_4);
+            return password;
+        }
     }
 }
