@@ -19,7 +19,7 @@ namespace UserForm
         [TestMethod]
         public void ValideEmail()
         {
-            bool result = UserRegistrationForm_MSTesting.UserRegistrationForm.UserFormLastName("Singh");
+            bool result = UserRegistrationForm_MSTesting.UserRegistrationForm.UserValideEmail("abc.xyz@bl.co.in");
             Assert.IsTrue(result);
         }
 

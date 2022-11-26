@@ -28,7 +28,7 @@ namespace UserRegistrationForm_MSTesting
         }
         public static bool UserValideEmail(string emailName)
         {
-            string userEmail = @"^[A-Z]{1}[a-z A-Z]{2,10}";
+            string userEmail = @"^[a][b][c]+([.][a-z A-Z 0-9]+)*@[bl]+.[co]{2,10}([.][a-z A-Z]{1,5})?$";
 
             Regex name = new Regex(userEmail);
             bool valideEmail = name.IsMatch(emailName);
