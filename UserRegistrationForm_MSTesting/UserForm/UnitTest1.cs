@@ -23,5 +23,12 @@ namespace UserForm
             Assert.IsTrue(result);
         }
 
+        [TestMethod]
+        public void MobileNumber()
+        {
+            bool result = UserRegistrationForm_MSTesting.UserRegistrationForm.MobileNumber("8266953797");
+            Assert.IsTrue(result);
+        }
+
     }
 }
