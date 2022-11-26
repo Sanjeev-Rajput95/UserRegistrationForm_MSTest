@@ -30,5 +30,12 @@ namespace UserForm
             Assert.IsTrue(result);
         }
 
+        [TestMethod]
+        public void PassWordRule_1()
+        {
+            bool result = UserRegistrationForm_MSTesting.UserRegistrationForm.PassWordRule1("sameersingh");
+            Assert.IsTrue(result);
+        }
+
     }
 }
