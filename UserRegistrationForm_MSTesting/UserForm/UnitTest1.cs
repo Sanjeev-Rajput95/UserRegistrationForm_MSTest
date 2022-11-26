@@ -58,5 +58,60 @@ namespace UserForm
             Assert.IsTrue(result);
         }
 
+        [TestMethod]
+        public void EmailSample()
+        {
+            bool result = UserRegistrationForm_MSTesting.UserRegistrationForm.EmailSample("abc@yahoo.com");
+            Assert.IsTrue(result);
+        }
+        [TestMethod]
+        public void EmailSample2()
+        {
+            bool result = UserRegistrationForm_MSTesting.UserRegistrationForm.EmailSample("abc-100@yahoo.com");
+            Assert.IsTrue(result);
+        }
+        [TestMethod]
+        public void EmailSample3()
+        {
+            bool result = UserRegistrationForm_MSTesting.UserRegistrationForm.EmailSample("abc.100@yahoo.com");
+            Assert.IsTrue(result);
+        }
+        [TestMethod]
+        public void EmailSample4()
+        {
+            bool result = UserRegistrationForm_MSTesting.UserRegistrationForm.EmailSample("abc111@abc.com");
+            Assert.IsTrue(result);
+        }
+        [TestMethod]
+        public void EmailSample5()
+        {
+            bool result = UserRegistrationForm_MSTesting.UserRegistrationForm.EmailSample("abc-100@abc.net");
+            Assert.IsTrue(result);
+        }
+        [TestMethod]
+        public void EmailSample6()
+        {
+            bool result = UserRegistrationForm_MSTesting.UserRegistrationForm.EmailSample("abc.100@abc.com.au");
+            Assert.IsTrue(result);
+        }
+        [TestMethod]
+        public void EmailSample7()
+        {
+            bool result = UserRegistrationForm_MSTesting.UserRegistrationForm.EmailSample("abc@1.com");
+            Assert.IsTrue(result);
+        }
+        [TestMethod]
+        public void EmailSample8()
+        {
+            bool result = UserRegistrationForm_MSTesting.UserRegistrationForm.EmailSample("abc@gmail.com.com");
+            Assert.IsTrue(result);
+        }
+        [TestMethod]
+        public void EmailSample9()
+        {
+            bool result = UserRegistrationForm_MSTesting.UserRegistrationForm.EmailSample("abc+100@gmail.com");
+            Assert.IsTrue(result);
+        }
+
     }
 }

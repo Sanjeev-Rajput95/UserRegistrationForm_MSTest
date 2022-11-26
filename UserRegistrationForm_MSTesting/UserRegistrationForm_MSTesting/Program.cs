@@ -16,27 +16,31 @@
 
             Console.Write("Enter the email address : ");
             string emailAddress = Console.ReadLine();
-            UserRegistrationForm.UserFormLastName(emailAddress);
+            UserRegistrationForm.UserValideEmail(emailAddress);
 
             Console.Write("Enter the Mobile Number : ");
             string mobileNumber = Console.ReadLine();
-            UserRegistrationForm.UserFormLastName(mobileNumber);
+            UserRegistrationForm.MobileNumber(mobileNumber);
 
             Console.Write("Enter the password  : ");
             string userPassWord = Console.ReadLine();
-            UserRegistrationForm.UserFormLastName(userPassWord);
+            UserRegistrationForm.PassWordRule1(userPassWord);
 
             Console.Write("Enter the password atleast 1 uppercase char : ");
             string uppercasePassWord = Console.ReadLine();
-            UserRegistrationForm.UserFormLastName(uppercasePassWord);
+            UserRegistrationForm.UpperCasePassWordRule_2(uppercasePassWord);
 
             Console.Write("Enter the password atleast 1 Number : ");
             string atleast1PassWord = Console.ReadLine();
-            UserRegistrationForm.UserFormLastName(atleast1PassWord);
+            UserRegistrationForm.Atleast1NumberPassWordRule_3(atleast1PassWord);
 
             Console.Write("Enter the password atleast 1 special char : ");
             string min1SpecialCharPassWord = Console.ReadLine();
-            UserRegistrationForm.UserFormLastName(min1SpecialCharPassWord);
+            UserRegistrationForm.Atleast1SpecialCharPassWordRule_4(min1SpecialCharPassWord);
+
+            Console.Write("Enter email Sample  : ");
+            string emailSample = Console.ReadLine();
+            UserRegistrationForm.EmailSample(emailSample);
         }
     }
 }
