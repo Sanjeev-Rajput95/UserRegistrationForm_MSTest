@@ -37,5 +37,12 @@ namespace UserForm
             Assert.IsTrue(result);
         }
 
+        [TestMethod]
+        public void UpperCasePassWordRule_2()
+        {
+            bool result = UserRegistrationForm_MSTesting.UserRegistrationForm.UpperCasePassWordRule_2("Sameersingh");
+            Assert.IsTrue(result);
+        }
+
     }
 }

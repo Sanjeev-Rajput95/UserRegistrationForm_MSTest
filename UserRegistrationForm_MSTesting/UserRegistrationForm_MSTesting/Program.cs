@@ -22,9 +22,13 @@
             string mobileNumber = Console.ReadLine();
             UserRegistrationForm.UserFormLastName(mobileNumber);
 
-            Console.Write("Enter the Mobile Number : ");
+            Console.Write("Enter the password  : ");
             string userPassWord = Console.ReadLine();
             UserRegistrationForm.UserFormLastName(userPassWord);
+
+            Console.Write("Enter the password atleast 1 uppercase char : ");
+            string uppercasePassWord = Console.ReadLine();
+            UserRegistrationForm.UserFormLastName(uppercasePassWord);
         }
     }
 }
