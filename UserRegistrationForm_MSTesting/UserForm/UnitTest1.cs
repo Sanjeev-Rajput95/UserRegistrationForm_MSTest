@@ -44,5 +44,12 @@ namespace UserForm
             Assert.IsTrue(result);
         }
 
+        [TestMethod]
+        public void Atleast1NumberPassWordRule_3()
+        {
+            bool result = UserRegistrationForm_MSTesting.UserRegistrationForm.Atleast1NumberPassWordRule_3("Sameersingh1");
+            Assert.IsTrue(result);
+        }
+
     }
 }
