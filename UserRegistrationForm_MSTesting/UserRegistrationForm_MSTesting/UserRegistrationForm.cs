@@ -26,5 +26,13 @@ namespace UserRegistrationForm_MSTesting
             bool LastName = name.IsMatch(lName);
             return LastName;
         }
+        public static bool UserValideEmail(string emailName)
+        {
+            string userEmail = @"^[A-Z]{1}[a-z A-Z]{2,10}";
+
+            Regex name = new Regex(userEmail);
+            bool valideEmail = name.IsMatch(emailName);
+            return valideEmail;
+        }
     }
 }
